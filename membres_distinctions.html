@@ -10,52 +10,67 @@
     <!--[If lte IE 6]>
     <link rel="stylesheet" href="http://images.wonaruto.com/d/6/style_ie6.css" type="text/css" media="screen"/>
     <![endif]-->
+
+    <script type="text/javascript" src="js/mustache.js"></script>
+    <script type="text/javascript">
+        var view = {
+            pseudo: "Test",
+            grade: "Etudiant",
+            avatar: "1/1"
+        };
+    </script>
 </head>
 <body>
 <div id="design">
     <div id="header">
-        <a href="http://www.wonaruto.com"><img src="http://images.wonaruto.com/bans/6/base_6.jpg"
-                                               alt="The Way Of Naruto" title="The Way Of Naruto"></a>
-        <span id="top-text">17:56 - <a href="http://www.wonaruto.com/membres/Arene/30/">Résultats des combats de l'Arène
+        <a href="#"><img src="http://images.wonaruto.com/bans/6/base_6.jpg"
+                         alt="The Way Of Naruto" title="The Way Of Naruto"></a>
+        <span id="top-text">17:56 - <a href="#">Résultats des combats de l'Arène
             #30 !</a></span>
     </div>
 
     <div id="ruban" class="vista">
         <div id="lien-menu-membres" onmouseout="v6_aff_menu_out()" onmouseover="v6_aff_menu('membres');" class=""><a
-                href="membres_profil.php"><img src="http://images.wonaruto.com/avatars/1/1.jpg">
-            <span><strong>Test</strong><br>Etudiant</span></a></div>
+                href="#">
+            <script type="text/javascript">
+                document.write(Mustache.render('<img src="http://images.wonaruto.com/avatars/{{&avatar}}.jpg"/>', view));
+            </script>
+            <script type="text/javascript">
+                document.write(Mustache.render('<span><strong>{{pseudo}}</strong><br>{{grade}}</span>', view));
+            </script>
+        </a></div>
 
         <div id="navigation">
-            <h1><a href="http://www.wonaruto.com"><img src="http://images.wonaruto.com/d/6/header-logo-vista.png"
-                                                       alt="The Way Of Naruto"></a></h1>
+            <h1><a href="#"><img src="http://images.wonaruto.com/d/6/header-logo-vista.png"
+                                 alt="The Way Of Naruto"></a></h1>
             <ul id="navigation-liste">
                 <li>
                     <script>var v6_menu_active = 'village';</script>
                     <a id="lien-menu-naruto" onmouseout="v6_aff_menu_out()" onmouseover="v6_aff_menu('naruto');"
-                       href="naruto/"><strong>Naruto</strong></a></li>
+                       href="#"><strong>Naruto</strong></a></li>
                 <li><a class="active" id="lien-menu-village" onmouseout="v6_aff_menu_out()"
                        onmouseover="v6_aff_menu('village');" href="membres.php"><strong>Konoha</strong></a></li>
                 <li><a id="lien-menu-wonde" onmouseout="v6_aff_menu_out()" onmouseover="v6_aff_menu('wonde');"
-                       href="membres/liste/"><strong>WoNde</strong></a></li>
+                       href="#"><strong>WoNde</strong></a></li>
                 <li><a id="lien-menu-clan" onmouseout="v6_aff_menu_out()" onmouseover="v6_aff_menu('clan');"
-                       href="membres_clans.php"><strong>Clan</strong></a></li>
+                       href="#"><strong>Clan</strong></a></li>
                 <li><a id="lien-menu-fanarts" onmouseout="v6_aff_menu_out()" onmouseover="v6_aff_menu('fanarts');"
-                       href="fanarts/"><strong>Fanarts</strong></a></li>
+                       href="#"><strong>Fanarts</strong></a></li>
                 <li><a id="lien-menu-fanfics" onmouseout="v6_aff_menu_out()" onmouseover="v6_aff_menu('fanfics');"
-                       href="fanfictions/"><strong>Fanfictions</strong></a></li>
-                <li class="nf"><a id="lien-menu-more" href="membres_barre.php"><strong>+</strong></a></li>
+                       href="#"><strong>Fanfictions</strong></a></li>
+                <li class="nf"><a id="lien-menu-more" href="#"><strong>+</strong></a></li>
             </ul>
         </div>
     </div>
 
-    <a id="onglet-events" href="membres_events.php" onclick="barre_click_events();return false"
+    <a id="onglet-events" href="#" onclick="barre_click_events();return false"
        title="Voir vos évènements"><span class="no-new">&nbsp;</span></a>
-    <a id="onglet-mp" href="membres_mp.php" title="Voir vos messages privés"><span class="new">1</span></a>
+    <a id="onglet-mp" href="#" title="Voir vos messages privés"><span class="no-new">&nbsp;</span></a>
 
     <div id="corps">
         <div id="contenu">
             <div id="titre-page">
-                <h2><a href="membres.php">Espace Membres</a> » Distinctions:</h2>
+                <h2><a href="#">Espace Membres</a> » Distinctions:</h2>
             </div>
 
             <div id="texted">

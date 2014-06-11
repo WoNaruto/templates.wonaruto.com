@@ -11,18 +11,174 @@
     <link rel="stylesheet" href="http://images.wonaruto.com/d/6/style_ie6.css" type="text/css" media="screen"/>
     <![endif]-->
 
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/mustache.js"></script>
     <script type="text/javascript">
-        var view = {
-            stats: {
-                chakra: 5,
-                niveau: 1,
-                nerutos: 6000
-            },
-            pseudo: "devYo",
-            grade: "Etudiant",
-            avatar: "10/1"
+        var source = {
+            "distinctions": [
+                {
+                    "categorie": "Arène",
+                    "data": [
+                        {
+                            "code": "arene-participer",
+                            "nom": "Ave, Caesar, morituri te salutant",
+                            "description": "Participer à une Arène",
+                            "template": {
+                                "base": 5,
+                                "picto": "arene",
+                                "type": "",
+                                "texte_g": "",
+                                "texte_d": ""
+                            },
+                            "rang": 1,
+                            "type": [
+                                "membre"
+                            ]
+                        },
+                        {
+                            "code": "arene-participer-10",
+                            "nom": "Doctore",
+                            "description": "Avoir participé à 10 Arènes",
+                            "template": {
+                                "base": 6,
+                                "picto": "arene",
+                                "type": "",
+                                "texte_g": "",
+                                "texte_d": "x10"
+                            },
+                            "rang": 2,
+                            "type": [
+                                "membre"
+                            ]
+                        },
+                        {
+                            "code": "arene-senshi-%s-top",
+                            "nom": "Champion de l'Empereur",
+                            "description": "Etre Meilleur Senshi de l'Arène",
+                            "template": {
+                                "base": 11,
+                                "picto": "arene",
+                                "type": "potentiel",
+                                "texte_g": "%s",
+                                "texte_d": ""
+                            },
+                            "rang": 7,
+                            "type": [
+                                "membre"
+                            ]
+                        },
+                        {
+                            "code": "arene-senshi-podium",
+                            "nom": "Champions",
+                            "description": "Etre sur le podium du classement des Senshi d'une Arène",
+                            "template": {
+                                "base": 9,
+                                "picto": "arene",
+                                "type": "potentiel",
+                                "texte_g": "",
+                                "texte_d": ""
+                            },
+                            "rang": 5,
+                            "type": [
+                                "membre"
+                            ]
+                        },
+                        {
+                            "code": "arene-senshi-top-2",
+                            "nom": "Et après on va me dire que c'est de la chance",
+                            "description": "Etre Meilleur Senshi de deux Arènes",
+                            "template": {
+                                "base": 11,
+                                "picto": "arene",
+                                "type": "potentiel",
+                                "texte_g": "",
+                                "texte_d": "x2"
+                            },
+                            "rang": 7,
+                            "type": [
+                                "membre"
+                            ]
+                        },
+                        {
+                            "code": "arene-senshi-top-jour",
+                            "nom": "Star d'un jour",
+                            "description": "Etre Meilleur Senshi d'une journée d'Arène",
+                            "template": {
+                                "base": 7,
+                                "picto": "arene",
+                                "type": "potentiel",
+                                "texte_g": "",
+                                "texte_d": ""
+                            },
+                            "rang": 3,
+                            "type": [
+                                "membre"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categorie": "Evènement",
+                    "data": [
+                        {
+                            "code": "event-noel-cadeau",
+                            "nom": "H0H 0H0",
+                            "description": "Venir récupérer son cadeau le jour de Noël",
+                            "template": {
+                                "base": 5,
+                                "picto": "bataille",
+                                "type": "tasse",
+                                "texte_g": "",
+                                "texte_d": ""
+                            },
+                            "rang": 1,
+                            "type": [
+                                "membre"
+                            ]
+                        },
+                        {
+                            "code": "event-zombie-round",
+                            "nom": "Día de Muertos",
+                            "description": "Remporter un Round de type Zombies au Naruto Fight Club",
+                            "template": {
+                                "base": 8,
+                                "picto": "zombie",
+                                "type": "victoire",
+                                "texte_g": "",
+                                "texte_d": ""
+                            },
+                            "rang": 4,
+                            "type": [
+                                "membre"
+                            ]
+                        },
+                        {
+                            "code": "event-zombie-100",
+                            "nom": "Zombies, niveau collège",
+                            "description": "Terminer dans le Top 100 d'un évènement A mort les Zombies",
+                            "template": {
+                                "base": 6,
+                                "picto": "zombie",
+                                "type": "top",
+                                "texte_g": "",
+                                "texte_d": ""
+                            },
+                            "rang": 2,
+                            "type": [
+                                "membre"
+                            ]
+                        }
+                    ]
+                }
+            ]
         };
+
+        $(document).ready(function () {
+            var template = $('#template').html();
+            Mustache.parse(template);
+            var rendered = Mustache.render(template, source);
+            $('#render').html(rendered);
+        });
     </script>
 </head>
 <body>
@@ -35,14 +191,7 @@
 
     <div id="ruban" class="vista">
         <div id="lien-menu-membres">
-            <a href="#">
-                <script type="text/javascript">
-                    document.write(Mustache.render('<img src="http://images.wonaruto.com/avatars/{{&avatar}}.jpg"/>', view));
-                </script>
-                <script type="text/javascript">
-                    document.write(Mustache.render('<span><strong>{{pseudo}}</strong><br>{{grade}}</span>', view));
-                </script>
-            </a>
+            <a href="#"><img src="http://images.wonaruto.com/avatars/10/1.jpg"/><span><strong>Mustache</strong><br>Etudiant</span></a>
         </div>
 
         <div id="navigation">
@@ -79,56 +228,51 @@
                 leo id metus.<br><br>
 
                 <div id="stitre">Mes distinctions</div>
-                <table class="liste" cellpadding="3" cellspacing="2">
-                    <tr>
-                        <td width="60" align="center" class="bg-3">
-                            <img src="http://images.wonaruto.com/s/2/picto-p-arene.png" alt="Arène des Villages"/><br>
 
-                            <span id="mclasse">3/70</span>
+                <script id="template" type="x-tmpl-mustache">
+                    <table class="liste" cellpadding="3" cellspacing="2">
+                    {{#distinctions}}
+                        <tr>
+                            <td class="bg-3" width="60">{{categorie}}</td>
+                            <td>
+                            {{#data}}
+                                <b>{{nom}}</b>
+                            {{/data}}
+                            </td>
+                        </tr>
+                    {{/distinctions}}
+                    </table>
 
-                            <div class="stats-barre-1">
-                            <div class="bb-1" style="width: 41%;"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <img class="dossier"
-                                 src="http://images.wonaruto.com/s/a3c12215d48d97670b73cfdba65ac1a9.png"/>
-                            <img class="dossier"
-                                 src="http://images.wonaruto.com/s/1d29e0e0d6f3b8d331029e55170f55a1.png"/>
-                        </td>
-                    </tr>
-                </table>
+
+
+                </script>
+
+                <div id="render"></div>
                 <br><br><br>
             </div>
         </div>
 
         <div id="menu">
             <div id="stats-membres">
-                <div class="l"><span>Chakra</span>
-                    <script type="text/javascript">document.write(Mustache.render('{{stats.chakra}}', view));</script>
-                </div>
-                <div class="l"><span>N€rutos</span>
-                    <script type="text/javascript">document.write(Mustache.render('{{stats.nerutos}}', view));</script>
-                </div>
-                <div class="l"><span>Niveau</span>
-                    <script type="text/javascript">document.write(Mustache.render('<img src="http://images.wonaruto.com/e/{{stats.niveau}}.png" alt="Niveau {{stats.niveau}}"/>', view));</script>
-                </div>
+                <div class="l"><span>Chakra</span> 5</div>
+                <div class="l"><span>N€rutos</span> 6000</div>
+                <div class="l"><span>Niveau</span> <img src="http://images.wonaruto.com/e/1.png" alt="Niveau 1"/></div>
                 <div class="l"><span>Ninjutsu</span>
 
                     <div class="stats-barre-1">
-                    <div class="bb-1" style="width: 41%;"></div>
+                        <div class="bb-1" style="width: 41%;"></div>
                     </div>
                 </div>
                 <div class="l"><span>Taijutsu</span>
 
                     <div class="stats-barre-1">
-                    <div class="bb-1" style="width: 41%;"></div>
+                        <div class="bb-1" style="width: 41%;"></div>
                     </div>
                 </div>
                 <div class="l"><span>Genjutsu</span>
 
                     <div class="stats-barre-1">
-                    <div class="bb-1" style="width: 21%;"></div>
+                        <div class="bb-1" style="width: 21%;"></div>
                     </div>
                 </div>
             </div>

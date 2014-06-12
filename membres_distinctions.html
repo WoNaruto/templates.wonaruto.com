@@ -193,13 +193,11 @@
 
         $(document).ready(function () {
             $.get('templates/membres_distinctions.mustache', function (template) {
-                console.log(template);
-                /*
-                 var template = $(data).find('#template').html();
+
+                var template = $(data).find('#template').html();
                  Mustache.parse(template);
                  var rendered = Mustache.render(template, source);
                  $('#render').html(rendered);
-                 */
             });
         });
     </script>

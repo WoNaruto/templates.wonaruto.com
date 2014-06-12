@@ -20,9 +20,18 @@
             var source = null;
 
             $.getJSON('src/distinctions.json', function (data) {
-                console.log(data);
-                source = data;
-            });
+                console.log('success');
+            })
+                    .done(function () {
+                        console.log("second success");
+                        source = data;
+                    })
+                    .fail(function () {
+                        console.log("error");
+                    })
+                    .always(function () {
+                        console.log("complete");
+                    });
 
             $.get('templates/membres_distinctions.mst', function (template) {
                 Mustache.parse(template);

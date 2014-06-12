@@ -188,9 +188,7 @@
                 }
             ]
         };
-
-        var template = "";
-
+        
         $(document).ready(function () {
             
             var templateUri = "templates/test.mustache";
@@ -202,7 +200,7 @@
                                   alert(result.message);
                               else  {
 
-                                template = result.message;
+                                var template = result.message;
                                 console.log(template);
 
                                 Mustache.parse(template);

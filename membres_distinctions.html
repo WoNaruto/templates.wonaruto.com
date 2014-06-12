@@ -189,23 +189,23 @@
             ]
         };
 
+        var template = "";
+
         $(document).ready(function () {
-            var template = '<table class="liste" cellpadding="3" cellspacing="0">\
-            {{#distinctions}}\
-                <tr class="bg-1">\
-                    <td width="50%"><b>{{categorie}}</b></td>\
-                    <td align="right">{{&render_bar}}</td>\
-                    <td align="right">{{&render_progression}}</td>\
-               </tr>\
-               <tr>\
-                    <td colspan="3">\
-                    {{#data}}\
-                    <img src="{{template}}" class="dossier" data-tt="ttHtml(\'<table class=&quot;liste&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot;><tr class=&quot;bg-1&quot;><td width=&quot;36&quot;><img src=&quot;{{template}}&quot; class=&quot;dossier&quot; /></td><td><b>{{render_nom}}</b></td></tr><tr><td colspan=&quot;2&quot;>{{render_description}}</td></tr></table>\')" onmouseover="ttInit(event,this)" data-ttclasse="dossier" />\
-                    {{/data}}\
-                    </td>\
-                </tr>\
-            {{/distinctions}}\
-            </table>';
+            
+            var templateUri = "https://rawgit.com/WoNaruto/templates.wonaruto.com/master/templates/membres_distinctions.mustache";
+
+            jQuery.ajax({
+                 url:    templateUri,
+                 success: function(result) {
+                              if(result.isOk == false)
+                                  alert(result.message);
+                              else 
+                                template = result.message;
+                          },
+                 async:   false
+            });    
+
             Mustache.parse(template);
             var rendered = Mustache.render(template, source);
             $('#render').html(rendered);

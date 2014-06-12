@@ -189,30 +189,18 @@
             ]
         };
 
-        var template = "";
+        //var template = "";
 
         $(document).ready(function () {
-            
-            var templateUri = "http://wonaruto.github.io/templates.wonaruto.com/templates/membres_distinctions.mustache";
-
-            $.ajax({
-                 url:    templateUri,
-                 success: function(result) {
-                              if(result.isOk == false)
-                                  alert(result.message);
-                              else  {
-
-                                template = result.message;
-
-                                Mustache.parse(template);
-                                var rendered = Mustache.render(template, source);
-                                $('#render').html(rendered);
-
-                              }
-                              
-                          },
-                 async:   false
-            });    
+            $.get('templates/membres_distinctions.mustache', function (template) {
+                console.log(template);
+                /*
+                 var template = $(data).find('#template').html();
+                 Mustache.parse(template);
+                 var rendered = Mustache.render(template, source);
+                 $('#render').html(rendered);
+                 */
+            });
         });
     </script>
 </head>

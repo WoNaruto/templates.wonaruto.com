@@ -3,6 +3,7 @@
 <head>
     <title>Naruto - The Way Of Naruto - Tout sur Naruto, le manga réalisé par Masashi Kishimoto</title>
     <link rel="stylesheet" href="http://images.wonaruto.com/d/6/style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/tooltip.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="http://images.wonaruto.com/d/6/style_v5.css" type="text/css" media="screen"/>
     <!--[If IE]>
     <link rel="stylesheet" href="http://images.wonaruto.com/d/6/style_ie.css" type="text/css" media="screen"/>
@@ -13,6 +14,7 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/mustache.js"></script>
+    <script type="text/javascript" src="js/tooltip.js"></script>
     <script type="text/javascript">
         var source = {
             "distinctions": [
@@ -23,99 +25,96 @@
                             "code": "arene-participer",
                             "nom": "Ave, Caesar, morituri te salutant",
                             "description": "Participer à une Arène",
-                            "template": {
-                                "base": 5,
-                                "picto": "arene",
-                                "type": "",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 1,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/a247aa41bdd6c0d49c650b41a38e12ba.png"
                         },
                         {
                             "code": "arene-participer-10",
                             "nom": "Doctore",
                             "description": "Avoir participé à 10 Arènes",
-                            "template": {
-                                "base": 6,
-                                "picto": "arene",
-                                "type": "",
-                                "texte_g": "",
-                                "texte_d": "x10"
-                            },
-                            "rang": 2,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/8a4f264e610622c1187f43c23c48c01e.png"
                         },
                         {
                             "code": "arene-senshi-%s-top",
                             "nom": "Champion de l'Empereur",
                             "description": "Etre Meilleur Senshi de l'Arène",
-                            "template": {
-                                "base": 11,
-                                "picto": "arene",
-                                "type": "potentiel",
-                                "texte_g": "%s",
-                                "texte_d": ""
-                            },
-                            "rang": 7,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/a3c12215d48d97670b73cfdba65ac1a9.png"
                         },
                         {
                             "code": "arene-senshi-podium",
                             "nom": "Champions",
                             "description": "Etre sur le podium du classement des Senshi d'une Arène",
-                            "template": {
-                                "base": 9,
-                                "picto": "arene",
-                                "type": "potentiel",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 5,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/1d29e0e0d6f3b8d331029e55170f55a1.png"
                         },
                         {
                             "code": "arene-senshi-top-2",
                             "nom": "Et après on va me dire que c'est de la chance",
                             "description": "Etre Meilleur Senshi de deux Arènes",
-                            "template": {
-                                "base": 11,
-                                "picto": "arene",
-                                "type": "potentiel",
-                                "texte_g": "",
-                                "texte_d": "x2"
-                            },
-                            "rang": 7,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/e961fa2ddc462410140bdcd199899478.png"
                         },
                         {
                             "code": "arene-senshi-top-jour",
                             "nom": "Star d'un jour",
                             "description": "Etre Meilleur Senshi d'une journée d'Arène",
-                            "template": {
-                                "base": 7,
-                                "picto": "arene",
-                                "type": "potentiel",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 3,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/a0e7566dda3b9cb428afa9a8b5adf887.png"
+                        },
+                        {
+                            "code": "arene-top-100",
+                            "nom": "Garde pas du tout rapprochée",
+                            "description": "Finir dans le Top 100 d'une Arène",
+                            "template": "http://images.wonaruto.com/s/f6d43f952e29763c8a3471dc8c661efe.png"
+                        },
+                        {
+                            "code": "arene-degats-2000",
+                            "nom": "Plus que 98 !",
+                            "description": "Cumuler 2000 dégâts en Arène",
+                            "template": "http://images.wonaruto.com/s/7a878b67a71ca395fe2963a3c02ecc37.png"
+                        },
+                        {
+                            "code": "arene-tuer-1",
+                            "nom": "Like a Virgin",
+                            "description": "Tuer l'un des participants d'une Arène",
+                            "template": "http://images.wonaruto.com/s/e18a4ce74972d8d811ffa8d50f816990.png"
+                        },
+                        {
+                            "code": "arene-meurtres-podium",
+                            "nom": "Executeurs",
+                            "description": "Etre sur le podium du classement des Tueurs d'une Arène",
+                            "template": "http://images.wonaruto.com/s/9a2769a755f8710930ca210cf47c0a1c.png"
+                        },
+                        {
+                            "code": "arene-zones-top",
+                            "nom": "Stratège de l'Empereur",
+                            "description": "Etre sur le podium du classement des Tueurs d'une Arène",
+                            "template": "http://images.wonaruto.com/s/61328ce577dd55ceebb6c43aec758aa8.png"
+                        },
+                        {
+                            "code": "arene-zones-maitriser-51",
+                            "nom": "I want to believe",
+                            "description": "Maîtriser la zone 51 d'une Arène",
+                            "template": "http://images.wonaruto.com/s/7c0041a579105befb5cf32fc9cbb2ed0.png"
+                        },
+                        {
+                            "code": "arene-meurtres-175",
+                            "nom": "Eventreur de Chesapeake",
+                            "description": "Cumuler 175 meurtres en Arène",
+                            "template": "http://images.wonaruto.com/s/53e9c943180dedf3de6ae28960960f9c.png"
                         }
-                    ]
+                    ],
+                    count: function () {
+                        return this.data.length;
+                    },
+                    render_progression: function () {
+                        return '<span id="mclasse">' + this.count() + ' / 30</span>';
+                    },
+                    render_bar: function () {
+                        return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+                    },
+                    render_nom: function () {
+                        return this.nom.replace(/'/g, '&#39;');
+                    },
+                    render_description: function () {
+                        return this.description.replace(/'/g, '&#39;');
+                    }
                 },
                 {
                     "categorie": "Evènement",
@@ -124,51 +123,36 @@
                             "code": "event-noel-cadeau",
                             "nom": "H0H 0H0",
                             "description": "Venir récupérer son cadeau le jour de Noël",
-                            "template": {
-                                "base": 5,
-                                "picto": "bataille",
-                                "type": "tasse",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 1,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/0b975ee51bf9b05907123126a3c5d3b7.png"
                         },
                         {
                             "code": "event-zombie-round",
                             "nom": "Día de Muertos",
                             "description": "Remporter un Round de type Zombies au Naruto Fight Club",
-                            "template": {
-                                "base": 8,
-                                "picto": "zombie",
-                                "type": "victoire",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 4,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/a48f20b8a8d589fa88ad3f1d3c445660.png"
                         },
                         {
                             "code": "event-zombie-100",
                             "nom": "Zombies, niveau collège",
                             "description": "Terminer dans le Top 100 d'un évènement A mort les Zombies",
-                            "template": {
-                                "base": 6,
-                                "picto": "zombie",
-                                "type": "top",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 2,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/dc3e33054e6b2f3a7d19504d82d30287.png"
                         }
-                    ]
+                    ],
+                    count: function () {
+                        return this.data.length;
+                    },
+                    render_progression: function () {
+                        return '<span id="mclasse">' + this.count() + ' / 10</span>';
+                    },
+                    render_bar: function () {
+                        return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+                    },
+                    render_nom: function () {
+                        return this.nom.replace(/'/g, '&#39;');
+                    },
+                    render_description: function () {
+                        return this.description.replace(/'/g, '&#39;');
+                    }
                 },
                 {
                     "categorie": "Forêt de la Mort",
@@ -177,41 +161,51 @@
                             "code": "fdm-elimination-epreuve-1",
                             "nom": "La vie ne tenait qu'à un rouleau",
                             "description": "Se faire éliminer lors de la première épreuve de la Forêt de la Mort (sans être inactif)",
-                            "template": {
-                                "base": 5,
-                                "picto": "fdm",
-                                "type": "actions",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 1,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/396c392a793af64c293d26158fc189cc.png"
                         },
                         {
                             "code": "fdm-participer",
                             "nom": "Bienvenus, Hansel et Gretel",
                             "description": "Participer à une Forêt de la Mort",
-                            "template": {
-                                "base": 5,
-                                "picto": "fdm",
-                                "type": "",
-                                "texte_g": "",
-                                "texte_d": ""
-                            },
-                            "rang": 1,
-                            "type": [
-                                "membre"
-                            ]
+                            "template": "http://images.wonaruto.com/s/64868c05a8cf8e6596a2237153049e55.png"
                         }
-                    ]
+                    ],
+                    count: function () {
+                        return this.data.length;
+                    },
+                    render_progression: function () {
+                        return '<span id="mclasse">' + this.count() + ' / 10</span>';
+                    },
+                    render_bar: function () {
+                        return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+                    },
+                    render_nom: function () {
+                        return this.nom.replace(/'/g, '&#39;');
+                    },
+                    render_description: function () {
+                        return this.description.replace(/'/g, '&#39;');
+                    }
                 }
             ]
         };
 
         $(document).ready(function () {
-            var template = $('#template').html();
+            var template = '<table class="liste" cellpadding="3" cellspacing="0">\
+            {{#distinctions}}\
+                <tr class="bg-1">\
+                    <td width="50%"><b>{{categorie}}</b></td>\
+                    <td align="right">{{&render_bar}}</td>\
+                    <td align="right">{{&render_progression}}</td>\
+               </tr>\
+               <tr>\
+                    <td colspan="3">\
+                    {{#data}}\
+                    <img src="{{template}}" class="dossier" data-tt="ttHtml(\'<table class=&quot;liste&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot;><tr class=&quot;bg-1&quot;><td width=&quot;36&quot;><img src=&quot;{{template}}&quot; class=&quot;dossier&quot; /></td><td><b>{{render_nom}}</b></td></tr><tr><td colspan=&quot;2&quot;>{{render_description}}</td></tr></table>\')" onmouseover="ttInit(event,this)" data-ttclasse="dossier" />\
+                    {{/data}}\
+                    </td>\
+                </tr>\
+            {{/distinctions}}\
+            </table>';
             Mustache.parse(template);
             var rendered = Mustache.render(template, source);
             $('#render').html(rendered);
@@ -265,21 +259,6 @@
                 leo id metus.<br><br>
 
                 <div id="stitre">Mes distinctions</div>
-
-                <script id="template" type="x-tmpl-mustache">
-                    <table class="liste" cellpadding="3" cellspacing="2">
-                    {{#distinctions}}
-                        <tr>
-                            <td class="bg-3" align="center" width="60">{{categorie}}</td>
-                            <td>
-                            {{#data}}
-                                <img src="http://images.wonaruto.com/s/29fa1dfb87341e8a2e3f742b1723bb48.png" class="dossier" />
-                            {{/data}}
-                            </td>
-                        </tr>
-                    {{/distinctions}}
-                    </table>
-                </script>
 
                 <div id="render"></div>
                 <br><br><br>

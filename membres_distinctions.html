@@ -201,9 +201,9 @@
                               else  {
 
                                 var template = result.message;
-                                console.log(template);
+                                  console.log(result);
 
-                                Mustache.parse(template);
+                                  Mustache.parse(template);
                                 var rendered = Mustache.render(template, source);
                                 console.log(rendered);
                                 $('#render').html(rendered);

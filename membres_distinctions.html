@@ -190,29 +190,11 @@
         };
         
         $(document).ready(function () {
-            
-            var templateUri = "templates/test.mustache";
-
-            $.ajax({
-                 url:    templateUri,
-                 success: function(result) {
-                              if(result.isOk == false)
-                                  alert(result.message);
-                              else  {
-
-                                var template = result.message;
-                                  console.log(result);
-
-                                  Mustache.parse(template);
-                                var rendered = Mustache.render(template, source);
-                                console.log(rendered);
-                                $('#render').html(rendered);
-
-                              }
-
-                          },
-                 async:   false
-            });    
+            $.get('templates/membres_distinctions.mst', function (template) {
+                Mustache.parse(template);
+                var rendered = Mustache.render(template, source);
+                $('#render').html(rendered);
+            });
         });
     </script>
 </head>

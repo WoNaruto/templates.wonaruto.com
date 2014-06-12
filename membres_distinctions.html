@@ -188,17 +188,31 @@
                 }
             ]
         };
-
-        //var template = "";
-
+        
         $(document).ready(function () {
-            $.get('templates/membres_distinctions.mustache', function (template) {
+            
+            var templateUri = "templates/test.mustache";
 
-                var template = $(data).find('#template').html();
-                 Mustache.parse(template);
-                 var rendered = Mustache.render(template, source);
-                 $('#render').html(rendered);
-            });
+            $.ajax({
+                 url:    templateUri,
+                 success: function(result) {
+                              if(result.isOk == false)
+                                  alert(result.message);
+                              else  {
+
+                                var template = result.message;
+                                console.log(template);
+
+                                Mustache.parse(template);
+                                var rendered = Mustache.render(template, source);
+                                console.log(rendered);
+                                $('#render').html(rendered);
+
+                              }
+
+                          },
+                 async:   false
+            });    
         });
     </script>
 </head>

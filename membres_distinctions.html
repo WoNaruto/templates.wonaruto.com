@@ -193,11 +193,12 @@
 
         $(document).ready(function () {
             
-            var templateUri = "https://rawgit.com/WoNaruto/templates.wonaruto.com/master/templates/membres_distinctions.mustache";
+            var templateUri = "http://wonaruto.github.io/templates.wonaruto.com/templates/membres_distinctions.mustache";
 
-            jQuery.ajax({
+            $.ajax({
                  url:    templateUri,
                  success: function(result) {
+                    alert(result);
                               if(result.isOk == false)
                                   alert(result.message);
                               else 

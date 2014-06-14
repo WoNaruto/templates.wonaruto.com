@@ -8,7 +8,7 @@
 <tr>
 <td colspan="3">
 {{#data}}
-<img src="{{template}}" class="dossier" data-tt="ttHtml(\'<table class=&quot;liste&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot;><tr class=&quot;bg-1&quot;><td width=&quot;36&quot;><img src=&quot;{{template}}&quot; class=&quot;dossier&quot; /></td><td><b>{{render_nom}}</b></td></tr><tr><td colspan=&quot;2&quot;>{{render_description}}</td></tr></table>\')" onmouseover="ttInit(event,this)" data-ttclasse="dossier" />
+<img src="{{template}}" class="dossier" data-tt="ttHtml('<table class=&quot;liste&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot;><tr class=&quot;bg-1&quot;><td width=&quot;36&quot;><img src=&quot;{{template}}&quot; class=&quot;dossier&quot; /></td><td><b>{{render_nom}}</b></td></tr><tr><td colspan=&quot;2&quot;>{{render_description}}</td></tr></table>')" onmouseover="ttInit(event,this)" data-ttclasse="dossier" />
 {{/data}}
 </td>
 </tr>

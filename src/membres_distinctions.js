@@ -115,7 +115,7 @@ var source = {
                 return function (val, render) {
                     return '<tr>\
                     <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + val + '"></td>\
+                    <td class="type_level_' + render(val) + '"></td>\
                     </tr>';
                 }
             }
@@ -165,7 +165,7 @@ var source = {
                 return function (val, render) {
                     return '<tr>\
                     <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + val + '"></td>\
+                    <td class="type_level_' + render(val) + '"></td>\
                     </tr>';
                 }
             }
@@ -208,7 +208,7 @@ var source = {
                 return function (val, render) {
                     return '<tr>\
                     <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + val + '"></td>\
+                    <td class="type_level_' + render(val) + '"></td>\
                     </tr>';
                 }
             }

@@ -2,6 +2,7 @@ var source = {
     "distinctions": [
         {
             "categorie": "Arène",
+            "categorie-code": "arene",
             "data": [
                 {
                     "code": "arene-participer",
@@ -113,6 +114,7 @@ var source = {
         },
         {
             "categorie": "Evènement",
+            "categorie-code": "events",
             "data": [
                 {
                     "code": "event-noel-cadeau",
@@ -154,6 +156,7 @@ var source = {
         },
         {
             "categorie": "Forêt de la Mort",
+            "categorie-code": "fdm",
             "data": [
                 {
                     "code": "fdm-elimination-epreuve-1",

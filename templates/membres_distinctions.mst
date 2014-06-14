@@ -13,12 +13,12 @@
     <tr style="display:none" id="details-{{categorie-code}}">
         <td colspan="3">
             <table class="liste" cellpadding="0" cellspacing="0">
-                {{render_details}}s{{render-details}}
-                {{render_details}}a{{render-details}}
-                {{render_details}}b{{render-details}}
-                {{render_details}}c{{render-details}}
-                {{render_details}}d{{render-details}}
-                {{render_details}}e{{render-details}}
+                {{#render_details}}s{{/render-details}}
+                {{#render_details}}a{{/render-details}}
+                {{#render_details}}b{{/render-details}}
+                {{#render_details}}c{{/render-details}}
+                {{#render_details}}d{{/render-details}}
+                {{#render_details}}e{{/render-details}}
             </table>
         </td>
     </tr>

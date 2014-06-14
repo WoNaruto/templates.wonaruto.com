@@ -112,14 +112,14 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                var s = Math.random(0, 10);
-                var a = Math.random(0, 10);
-                var b = Math.random(0, 10);
-                var c = Math.random(0, 10);
-                var d = Math.random(0, 10);
-                var e = Math.random(0, 10);
+                var s = Math.floor((Math.random() * 10) + 1);
+                var a = Math.floor((Math.random() * 10) + 1);
+                var b = Math.floor((Math.random() * 10) + 1);
+                var c = Math.floor((Math.random() * 10) + 1);
+                var d = Math.floor((Math.random() * 10) + 1);
+                var e = Math.floor((Math.random() * 10) + 1);
 
-                return s + " S, " + a + "A, " + b + "B, " + c + "C, " + d + "D, " + e + "E";
+                return s + " S, " + a + " A, " + b + " B, " + c + " C, " + d + " D, " + e + " E";
             }
         },
         {
@@ -164,14 +164,14 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                var s = Math.random(0, 10);
-                var a = Math.random(0, 10);
-                var b = Math.random(0, 10);
-                var c = Math.random(0, 10);
-                var d = Math.random(0, 10);
-                var e = Math.random(0, 10);
+                var s = Math.floor((Math.random() * 10) + 1);
+                var a = Math.floor((Math.random() * 10) + 1);
+                var b = Math.floor((Math.random() * 10) + 1);
+                var c = Math.floor((Math.random() * 10) + 1);
+                var d = Math.floor((Math.random() * 10) + 1);
+                var e = Math.floor((Math.random() * 10) + 1);
 
-                return s + " S, " + a + "A, " + b + "B, " + c + "C, " + d + "D, " + e + "E";
+                return s + " S, " + a + " A, " + b + " B, " + c + " C, " + d + " D, " + e + " E";
             }
         },
         {
@@ -209,14 +209,14 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                var s = Math.random(0, 10);
-                var a = Math.random(0, 10);
-                var b = Math.random(0, 10);
-                var c = Math.random(0, 10);
-                var d = Math.random(0, 10);
-                var e = Math.random(0, 10);
+                var s = Math.floor((Math.random() * 10) + 1);
+                var a = Math.floor((Math.random() * 10) + 1);
+                var b = Math.floor((Math.random() * 10) + 1);
+                var c = Math.floor((Math.random() * 10) + 1);
+                var d = Math.floor((Math.random() * 10) + 1);
+                var e = Math.floor((Math.random() * 10) + 1);
 
-                return s + " S, " + a + "A, " + b + "B, " + c + "C, " + d + "D, " + e + "E";
+                return s + " S, " + a + " A, " + b + " B, " + c + " C, " + d + " D, " + e + " E";
             }
         }
     ]

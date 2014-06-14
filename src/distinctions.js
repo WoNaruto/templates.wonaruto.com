@@ -1,4 +1,4 @@
-var data = {
+var source = {
     "distinctions": [
         {
             "categorie": "Arène",

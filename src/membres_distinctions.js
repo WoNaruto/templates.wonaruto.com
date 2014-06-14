@@ -111,11 +111,13 @@ var source = {
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
             },
-            "render_details": function (type) {
-                return '<tr>\
+            "render_details": function () {
+                return function (val, render) {
+                    return '<tr>\
                     <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + type + '"></td>\
+                    <td class="type_level_' + val + '"></td>\
                     </tr>';
+                }
             }
         },
         {
@@ -159,11 +161,13 @@ var source = {
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
             },
-            "render_details": function (type) {
-                return '<tr>\
+            "render_details": function () {
+                return function (val, render) {
+                    return '<tr>\
                     <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + type + '"></td>\
+                    <td class="type_level_' + val + '"></td>\
                     </tr>';
+                }
             }
         },
         {
@@ -200,11 +204,13 @@ var source = {
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
             },
-            "render_details": function (type) {
-                return '<tr>\
+            "render_details": function () {
+                return function (val, render) {
+                    return '<tr>\
                     <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + type + '"></td>\
+                    <td class="type_level_' + val + '"></td>\
                     </tr>';
+                }
             }
         }
     ]

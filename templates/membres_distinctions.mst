@@ -11,7 +11,7 @@
         </td>
     </tr>
     <tr style="display:none" id="details-{{categorie-code}}">
-        <td colspan="3">
+        <td colspan="3" align="right">
             {{&render_details}}
         </td>
     </tr>

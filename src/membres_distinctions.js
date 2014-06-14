@@ -125,11 +125,11 @@ var source = {
                 }
 
                 return result["s"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["a"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["b"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["c"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["d"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["e"]+' <span class="type_level_s"></span>';
+                '+ result["a"]+' <span class="type_level_a"></span>&nbsp;\
+                '+ result["b"]+' <span class="type_level_b"></span>&nbsp;\
+                '+ result["c"]+' <span class="type_level_c"></span>&nbsp;\
+                '+ result["d"]+' <span class="type_level_d"></span>&nbsp;\
+                '+ result["e"]+' <span class="type_level_e"></span>';
             }
         },
         {
@@ -187,11 +187,11 @@ var source = {
                 }
 
                 return result["s"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["a"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["b"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["c"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["d"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["e"]+' <span class="type_level_s"></span>';
+                '+ result["a"]+' <span class="type_level_a"></span>&nbsp;\
+                '+ result["b"]+' <span class="type_level_b"></span>&nbsp;\
+                '+ result["c"]+' <span class="type_level_c"></span>&nbsp;\
+                '+ result["d"]+' <span class="type_level_d"></span>&nbsp;\
+                '+ result["e"]+' <span class="type_level_e"></span>';
             }
         },
         {
@@ -242,11 +242,11 @@ var source = {
                 }
 
                 return result["s"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["a"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["b"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["c"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["d"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["e"]+' <span class="type_level_s"></span>';
+                '+ result["a"]+' <span class="type_level_a"></span>&nbsp;\
+                '+ result["b"]+' <span class="type_level_b"></span>&nbsp;\
+                '+ result["c"]+' <span class="type_level_c"></span>&nbsp;\
+                '+ result["d"]+' <span class="type_level_d"></span>&nbsp;\
+                '+ result["e"]+' <span class="type_level_e"></span>';
             }
         }
     ]

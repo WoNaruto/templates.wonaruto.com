@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <td colspan="3" class="mclasse right">
-            <a href="#" onclick="aff_div('details-{{categorie_code}}')">Détails</a>
+            <a href="#" onclick="aff_div('details-{{categorie-code}}')">Détails</a>
         </td>
     </tr>
     <tr id="details-{{categorie-code}}">

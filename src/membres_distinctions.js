@@ -124,7 +124,12 @@ var source = {
                     if(this.data[i].niveau == 8) result["s"]++;
                 }
 
-                return '<tr><td>' + result["e"] + '</td><td class="type_level_e"></td></tr>';
+                return result["s"]+' <span class="type_level_s"></span>&nbsp;\
+                '+ result["a"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["b"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["c"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["d"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["e"]+' <span class="type_level_s"></span>>';
             }
         },
         {
@@ -181,7 +186,12 @@ var source = {
                     if(this.data[i].niveau == 8) result["s"]++;
                 }
 
-                return '<tr><td>' + result["e"] + '</td><td class="type_level_e"></td></tr>';
+                return result["s"]+' <span class="type_level_s"></span>&nbsp;\
+                '+ result["a"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["b"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["c"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["d"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["e"]+' <span class="type_level_s"></span>>';
             }
         },
         {
@@ -231,7 +241,12 @@ var source = {
                     if(this.data[i].niveau == 8) result["s"]++;
                 }
 
-                return '<tr><td>' + result["e"] + '</td><td class="type_level_e"></td></tr>';
+                return result["s"]+' <span class="type_level_s"></span>&nbsp;\
+                '+ result["a"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["b"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["c"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["d"]+' <span class="type_level_s"></span>>&nbsp;\
+                '+ result["e"]+' <span class="type_level_s"></span>>';
             }
         }
     ]

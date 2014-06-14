@@ -10,8 +10,8 @@
             <a href="#" onclick="aff_div('details-{{categorie-code}}')">Détails</a>
         </td>
     </tr>
-    <tr id="details-{{categorie-code}}">
-        <td colspan="3" style="display:none">{{categorie}}</td>
+    <tr style="display:none" id="details-{{categorie-code}}">
+        <td colspan="3">{{categorie}}</td>
     </tr>
     <tr>
         <td colspan="3">

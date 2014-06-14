@@ -113,10 +113,7 @@ var source = {
             },
             "render_details": function () {
                 return function (val, render) {
-                    return '<tr>\
-                    <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + render(val) + '"></td>\
-                    </tr>';
+                    return Math.floor((Math.random() * 10) + 1) + ' ' + render(val);
                 }
             }
         },
@@ -163,10 +160,7 @@ var source = {
             },
             "render_details": function () {
                 return function (val, render) {
-                    return '<tr>\
-                    <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + render(val) + '"></td>\
-                    </tr>';
+                    return Math.floor((Math.random() * 10) + 1) + ' ' + render(val);
                 }
             }
         },
@@ -206,10 +200,7 @@ var source = {
             },
             "render_details": function () {
                 return function (val, render) {
-                    return '<tr>\
-                    <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
-                    <td class="type_level_' + render(val) + '"></td>\
-                    </tr>';
+                    return Math.floor((Math.random() * 10) + 1) + ' ' + render(val);
                 }
             }
         }

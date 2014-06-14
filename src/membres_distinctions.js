@@ -123,7 +123,13 @@ var source = {
                     if(this.data[i].niveau == 7) result["a"]++;
                     if(this.data[i].niveau == 8) result["s"]++;
                 }
-                console.log(result);
+
+                return '<tr><td>'+result["s"]+'</td><td class="type_level_s"></td></tr>\
+                <tr><td>'+result["a"]+'</td><td class="type_level_a"></td></tr>\
+                <tr><td>'+result["b"]+'</td><td class="type_level_b"></td></tr>\
+                <tr><td>'+result["c"]+'</td><td class="type_level_c"></td></tr>\
+                <tr><td>'+result["d"]+'</td><td class="type_level_d"></td></tr>\
+                <tr><td>'+result["e"]+'</td><td class="type_level_e"></td></tr>';
             }
         },
         {
@@ -179,7 +185,13 @@ var source = {
                     if(this.data[i].niveau == 7) result["a"]++;
                     if(this.data[i].niveau == 8) result["s"]++;
                 }
-                console.log(result);
+
+                return '<tr><td>'+result["s"]+'</td><td class="type_level_s"></td></tr>\
+                <tr><td>'+result["a"]+'</td><td class="type_level_a"></td></tr>\
+                <tr><td>'+result["b"]+'</td><td class="type_level_b"></td></tr>\
+                <tr><td>'+result["c"]+'</td><td class="type_level_c"></td></tr>\
+                <tr><td>'+result["d"]+'</td><td class="type_level_d"></td></tr>\
+                <tr><td>'+result["e"]+'</td><td class="type_level_e"></td></tr>';
             }
         },
         {
@@ -228,7 +240,13 @@ var source = {
                     if(this.data[i].niveau == 7) result["a"]++;
                     if(this.data[i].niveau == 8) result["s"]++;
                 }
-                console.log(result);
+
+                return '<tr><td>'+result["s"]+'</td><td class="type_level_s"></td></tr>\
+                <tr><td>'+result["a"]+'</td><td class="type_level_a"></td></tr>\
+                <tr><td>'+result["b"]+'</td><td class="type_level_b"></td></tr>\
+                <tr><td>'+result["c"]+'</td><td class="type_level_c"></td></tr>\
+                <tr><td>'+result["d"]+'</td><td class="type_level_d"></td></tr>\
+                <tr><td>'+result["e"]+'</td><td class="type_level_e"></td></tr>';
             }
         }
     ]

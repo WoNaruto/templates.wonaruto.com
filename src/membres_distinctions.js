@@ -112,9 +112,18 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                return function (val, render) {
-                    return Math.floor((Math.random() * 10) + 1) + ' ' + render(val);
+                var total = this.count();
+                var result = {"e": 0, "d": 0, "c": 0, "b": 0, "a": 0, "s": 0};
+
+                for(i=0;i<total;i++) {
+                    if(this.data[i].niveau == 1 || this.data[i].niveau == 2) result["e"]++;
+                    if(this.data[i].niveau == 3 || this.data[i].niveau == 4) result["d"]++;
+                    if(this.data[i].niveau == 5) result["c"]++;
+                    if(this.data[i].niveau == 6) result["b"]++;
+                    if(this.data[i].niveau == 7) result["a"]++;
+                    if(this.data[i].niveau == 8) result["s"]++;
                 }
+                console.log(result);
             }
         },
         {
@@ -159,9 +168,18 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                return function (val, render) {
-                    return Math.floor((Math.random() * 10) + 1) + ' ' + render(val);
+                var total = this.count();
+                var result = {"e": 0, "d": 0, "c": 0, "b": 0, "a": 0, "s": 0};
+
+                for(i=0;i<total;i++) {
+                    if(this.data[i].niveau == 1 || this.data[i].niveau == 2) result["e"]++;
+                    if(this.data[i].niveau == 3 || this.data[i].niveau == 4) result["d"]++;
+                    if(this.data[i].niveau == 5) result["c"]++;
+                    if(this.data[i].niveau == 6) result["b"]++;
+                    if(this.data[i].niveau == 7) result["a"]++;
+                    if(this.data[i].niveau == 8) result["s"]++;
                 }
+                console.log(result);
             }
         },
         {
@@ -199,9 +217,18 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                return function (val, render) {
-                    return Math.floor((Math.random() * 10) + 1) + ' ' + render(val);
+                var total = this.count();
+                var result = {"e": 0, "d": 0, "c": 0, "b": 0, "a": 0, "s": 0};
+
+                for(i=0;i<total;i++) {
+                    if(this.data[i].niveau == 1 || this.data[i].niveau == 2) result["e"]++;
+                    if(this.data[i].niveau == 3 || this.data[i].niveau == 4) result["d"]++;
+                    if(this.data[i].niveau == 5) result["c"]++;
+                    if(this.data[i].niveau == 6) result["b"]++;
+                    if(this.data[i].niveau == 7) result["a"]++;
+                    if(this.data[i].niveau == 8) result["s"]++;
                 }
+                console.log(result);
             }
         }
     ]

@@ -110,6 +110,16 @@ var source = {
             },
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
+            },
+            "render_details": function () {
+                var s = Math.random(0, 10);
+                var a = Math.random(0, 10);
+                var b = Math.random(0, 10);
+                var c = Math.random(0, 10);
+                var d = Math.random(0, 10);
+                var e = Math.random(0, 10);
+
+                return s + " S, " + a + "A, " + b + "B, " + c + "C, " + d + "D, " + e + "E";
             }
         },
         {
@@ -152,6 +162,16 @@ var source = {
             },
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
+            },
+            "render_details": function () {
+                var s = Math.random(0, 10);
+                var a = Math.random(0, 10);
+                var b = Math.random(0, 10);
+                var c = Math.random(0, 10);
+                var d = Math.random(0, 10);
+                var e = Math.random(0, 10);
+
+                return s + " S, " + a + "A, " + b + "B, " + c + "C, " + d + "D, " + e + "E";
             }
         },
         {
@@ -187,6 +207,16 @@ var source = {
             },
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
+            },
+            "render_details": function () {
+                var s = Math.random(0, 10);
+                var a = Math.random(0, 10);
+                var b = Math.random(0, 10);
+                var c = Math.random(0, 10);
+                var d = Math.random(0, 10);
+                var e = Math.random(0, 10);
+
+                return s + " S, " + a + "A, " + b + "B, " + c + "C, " + d + "D, " + e + "E";
             }
         }
     ]

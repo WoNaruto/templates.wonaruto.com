@@ -1,0 +1,59 @@
+table.liste td.bg-3.type_level_s, table.liste td.bg-1.type_level_s {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/3/picto-m-s.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-3.type_level_a, table.liste td.bg-1.type_level_a {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/3/picto-m-a.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-3.type_level_b, table.liste td.bg-1.type_level_b {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/3/picto-m-b.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-3.type_level_c, table.liste td.bg-1.type_level_c {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/3/picto-m-c.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-3.type_level_d, table.liste td.bg-1.type_level_d {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/3/picto-m-d.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-3.type_level_e, table.liste td.bg-1.type_level_e {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/3/picto-m-e.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-2.type_level_s, .type_level_s, table.liste td.bg-1.type_level_s {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/2/picto-m-s.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-2.type_level_a, .type_level_a, table.liste td.bg-1.type_level_a {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/2/picto-m-a.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-2.type_level_b, .type_level_b, table.liste td.bg-1.type_level_b {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/2/picto-m-b.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-2.type_level_c, .type_level_c, table.liste td.bg-1.type_level_c {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/2/picto-m-c.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-2.type_level_d, .type_level_d, table.liste td.bg-1.type_level_d {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/2/picto-m-d.png) no-repeat 5px 50%;
+}
+
+table.liste td.bg-2.type_level_d, .type_level_e, table.liste td.bg-1.type_level_e {
+    padding-left: 20px;
+    background: url(http://images.wonaruto.com/s/2/picto-m-e.png) no-repeat 5px 50%;
+}

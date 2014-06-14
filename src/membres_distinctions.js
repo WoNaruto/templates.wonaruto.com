@@ -111,15 +111,11 @@ var source = {
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
             },
-            "render_details": function () {
-                var s = Math.floor((Math.random() * 10) + 1);
-                var a = Math.floor((Math.random() * 10) + 1);
-                var b = Math.floor((Math.random() * 10) + 1);
-                var c = Math.floor((Math.random() * 10) + 1);
-                var d = Math.floor((Math.random() * 10) + 1);
-                var e = Math.floor((Math.random() * 10) + 1);
-
-                return s + " S, " + a + " A, " + b + " B, " + c + " C, " + d + " D, " + e + " E";
+            "render_details": function (type) {
+                return '<tr>\
+                    <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
+                    <td class="type_level_' + type + '"></td>\
+                    </tr>';
             }
         },
         {
@@ -163,15 +159,11 @@ var source = {
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
             },
-            "render_details": function () {
-                var s = Math.floor((Math.random() * 10) + 1);
-                var a = Math.floor((Math.random() * 10) + 1);
-                var b = Math.floor((Math.random() * 10) + 1);
-                var c = Math.floor((Math.random() * 10) + 1);
-                var d = Math.floor((Math.random() * 10) + 1);
-                var e = Math.floor((Math.random() * 10) + 1);
-
-                return s + " S, " + a + " A, " + b + " B, " + c + " C, " + d + " D, " + e + " E";
+            "render_details": function (type) {
+                return '<tr>\
+                    <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
+                    <td class="type_level_' + type + '"></td>\
+                    </tr>';
             }
         },
         {
@@ -208,15 +200,11 @@ var source = {
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
             },
-            "render_details": function () {
-                var s = Math.floor((Math.random() * 10) + 1);
-                var a = Math.floor((Math.random() * 10) + 1);
-                var b = Math.floor((Math.random() * 10) + 1);
-                var c = Math.floor((Math.random() * 10) + 1);
-                var d = Math.floor((Math.random() * 10) + 1);
-                var e = Math.floor((Math.random() * 10) + 1);
-
-                return s + " S, " + a + " A, " + b + " B, " + c + " C, " + d + " D, " + e + " E";
+            "render_details": function (type) {
+                return '<tr>\
+                    <td>' + Math.floor((Math.random() * 10) + 1) + '</td>\
+                    <td class="type_level_' + type + '"></td>\
+                    </tr>';
             }
         }
     ]

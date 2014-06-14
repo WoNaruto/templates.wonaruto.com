@@ -19,7 +19,6 @@
         $(document).ready(function () {
 
             $.get('src/distinctions.js', function (data) {
-                
                 eval(data);
 
                 $.get('templates/membres_distinctions.mst', function (template) {

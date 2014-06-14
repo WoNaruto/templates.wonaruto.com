@@ -83,90 +83,90 @@ var source = {
                 }
             ],
             "count": function () {
-return this.data.length;
-},
-"render_progression": function () {
-return '<span id="mclasse">' + this.count() + ' / 30</span>';
-},
-"render_bar": function () {
-return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
-},
-"render_nom": function () {
-return this.nom.replace(/'/g, '&#39;');
-},
-"render_description": function () {
-return this.description.replace(/'/g, '&#39;');
-}
-},
-{
-"categorie": "Evènement",
-"data": [
-{
-"code": "event-noel-cadeau",
-"nom": "H0H 0H0",
-"description": "Venir récupérer son cadeau le jour de Noël",
-"template": "http://images.wonaruto.com/s/0b975ee51bf9b05907123126a3c5d3b7.png"
-},
-{
-"code": "event-zombie-round",
-"nom": "Día de Muertos",
-"description": "Remporter un Round de type Zombies au Naruto Fight Club",
-"template": "http://images.wonaruto.com/s/a48f20b8a8d589fa88ad3f1d3c445660.png"
-},
-{
-"code": "event-zombie-100",
-"nom": "Zombies, niveau collège",
-"description": "Terminer dans le Top 100 d'un évènement A mort les Zombies",
-"template": "http://images.wonaruto.com/s/dc3e33054e6b2f3a7d19504d82d30287.png"
-}
-],
-"count": function () {
-return this.data.length;
-},
-"render_progression": function () {
-return '<span id="mclasse">' + this.count() + ' / 10</span>';
-},
-"render_bar": function () {
-return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
-},
-"render_nom": function () {
-return this.nom.replace(/'/g, '&#39;');
-},
-"render_description": function () {
-return this.description.replace(/'/g, '&#39;');
-}
-},
-{
-"categorie": "Forêt de la Mort",
-"data": [
-{
-"code": "fdm-elimination-epreuve-1",
-"nom": "La vie ne tenait qu'à un rouleau",
-"description": "Se faire éliminer lors de la première épreuve de la Forêt de la Mort (sans être inactif)",
-"template": "http://images.wonaruto.com/s/396c392a793af64c293d26158fc189cc.png"
-},
-{
-"code": "fdm-participer",
-"nom": "Bienvenus, Hansel et Gretel",
-"description": "Participer à une Forêt de la Mort",
-"template": "http://images.wonaruto.com/s/64868c05a8cf8e6596a2237153049e55.png"
-}
-],
-"count": function () {
-return this.data.length;
-},
-"render_progression": function () {
-return '<span id="mclasse">' + this.count() + ' / 10</span>';
-},
-"render_bar": function () {
-return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
-},
-"render_nom": function () {
-return this.nom.replace(/'/g, '&#39;');
-},
-"render_description": function () {
-return this.description.replace(/'/g, '&#39;');
-}
-}
-]
+                return this.data.length;
+            },
+            "render_progression": function () {
+                return '<span id="mclasse">' + this.count() + ' / 30</span>';
+            },
+            "render_bar": function () {
+                return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+            },
+            "render_nom": function () {
+                return this.nom.replace(/'/g, '&#39;');
+            },
+            "render_description": function () {
+                return this.description.replace(/'/g, '&#39;');
+            }
+        },
+        {
+            "categorie": "Evènement",
+            "data": [
+                {
+                    "code": "event-noel-cadeau",
+                    "nom": "H0H 0H0",
+                    "description": "Venir récupérer son cadeau le jour de Noël",
+                    "template": "http://images.wonaruto.com/s/0b975ee51bf9b05907123126a3c5d3b7.png"
+                },
+                {
+                    "code": "event-zombie-round",
+                    "nom": "Día de Muertos",
+                    "description": "Remporter un Round de type Zombies au Naruto Fight Club",
+                    "template": "http://images.wonaruto.com/s/a48f20b8a8d589fa88ad3f1d3c445660.png"
+                },
+                {
+                    "code": "event-zombie-100",
+                    "nom": "Zombies, niveau collège",
+                    "description": "Terminer dans le Top 100 d'un évènement A mort les Zombies",
+                    "template": "http://images.wonaruto.com/s/dc3e33054e6b2f3a7d19504d82d30287.png"
+                }
+            ],
+            "count": function () {
+                return this.data.length;
+            },
+            "render_progression": function () {
+                return '<span id="mclasse">' + this.count() + ' / 10</span>';
+            },
+            "render_bar": function () {
+                return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+            },
+            "render_nom": function () {
+                return this.nom.replace(/'/g, '&#39;');
+            },
+            "render_description": function () {
+                return this.description.replace(/'/g, '&#39;');
+            }
+        },
+        {
+            "categorie": "Forêt de la Mort",
+            "data": [
+                {
+                    "code": "fdm-elimination-epreuve-1",
+                    "nom": "La vie ne tenait qu'à un rouleau",
+                    "description": "Se faire éliminer lors de la première épreuve de la Forêt de la Mort (sans être inactif)",
+                    "template": "http://images.wonaruto.com/s/396c392a793af64c293d26158fc189cc.png"
+                },
+                {
+                    "code": "fdm-participer",
+                    "nom": "Bienvenus, Hansel et Gretel",
+                    "description": "Participer à une Forêt de la Mort",
+                    "template": "http://images.wonaruto.com/s/64868c05a8cf8e6596a2237153049e55.png"
+                }
+            ],
+            "count": function () {
+                return this.data.length;
+            },
+            "render_progression": function () {
+                return '<span id="mclasse">' + this.count() + ' / 10</span>';
+            },
+            "render_bar": function () {
+                return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+            },
+            "render_nom": function () {
+                return this.nom.replace(/'/g, '&#39;');
+            },
+            "render_description": function () {
+                return this.description.replace(/'/g, '&#39;');
+            }
+        }
+    ]
 }

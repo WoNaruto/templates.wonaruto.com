@@ -17,17 +17,19 @@
     <script type="text/javascript" src="js/tooltip.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            var source = null;
 
-            $.get('src/distinctions.json', function (data) {
-                var source = data;
+            $.get('src/distinctions.js', function (data) {
+                
+                eval(data);
+
+                $.get('templates/membres_distinctions.mst', function (template) {
+                    Mustache.parse(template);
+                    var rendered = Mustache.render(template, source);
+                    $('#render').html(rendered);
+                });
+
             });
 
-            $.get('templates/membres_distinctions.mst', function (template) {
-                Mustache.parse(template);
-                var rendered = Mustache.render(template, source);
-                $('#render').html(rendered);
-            });
         });
     </script>
 </head>

@@ -3,6 +3,32 @@ var source = {
         {
             "categorie": "Arène",
             "categorie-code": "arene",
+            "details": [
+                {
+                    "difficulte": "s",
+                    "nbre": 1
+                },
+                {
+                    "difficulte": "a",
+                    "nbre": 1
+                },
+                {
+                    "difficulte": "b",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "c",
+                    "nbre": 2
+                },
+                {
+                    "difficulte": "d",
+                    "nbre": 4
+                },
+                {
+                    "difficulte": "e",
+                    "nbre": 5
+                }
+            ],
             "data": [
                 {
                     "code": "arene-participer",
@@ -110,34 +136,37 @@ var source = {
             },
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
-            },
-            "render_details": function () {
-                return function (val, render) {
-                    var total = this.count();
-                    var type_level = {"e": [1, 2], "d": [3, 4], "c": 5, "b": 6, "a": 7, "s": 8};
-                    var count = 0;
-
-                    if (val == "e" || val == "d") {
-                        for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val][0] || this.data[i].niveau == type_level[val][1]) {
-                                count++;
-                            }
-                        }
-                    } else {
-                        for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val]) {
-                                count++;
-                            }
-                        }
-                    }
-
-                    return count;
-                }
             }
         },
         {
             "categorie": "Evènement",
             "categorie-code": "events",
+            "details": [
+                {
+                    "difficulte": "s",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "a",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "b",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "c",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "d",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "e",
+                    "nbre": 3
+                }
+            ],
             "data": [
                 {
                     "code": "event-noel-cadeau",
@@ -175,34 +204,37 @@ var source = {
             },
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
-            },
-            "render_details": function () {
-                return function (val, render) {
-                    var total = this.count();
-                    var type_level = {"e": [1, 2], "d": [3, 4], "c": 5, "b": 6, "a": 7, "s": 8};
-                    var count = 0;
-
-                    if (val == "e" || val == "d") {
-                        for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val][0] || this.data[i].niveau == type_level[val][1]) {
-                                count++;
-                            }
-                        }
-                    } else {
-                        for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val]) {
-                                count++;
-                            }
-                        }
-                    }
-
-                    return count;
-                }
             }
         },
         {
             "categorie": "Forêt de la Mort",
             "categorie-code": "fdm",
+            "details": [
+                {
+                    "difficulte": "s",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "a",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "b",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "c",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "d",
+                    "nbre": 0
+                },
+                {
+                    "difficulte": "e",
+                    "nbre": 2
+                }
+            ],
             "data": [
                 {
                     "code": "fdm-elimination-epreuve-1",
@@ -233,29 +265,6 @@ var source = {
             },
             "render_description": function () {
                 return this.description.replace(/'/g, '&#39;');
-            },
-            "render_details": function () {
-                return function (val, render) {
-                    var total = this.count();
-                    var type_level = {"e": [1, 2], "d": [3, 4], "c": 5, "b": 6, "a": 7, "s": 8};
-                    var count = 0;
-
-                    if (val == "e" || val == "d") {
-                        for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val][0] || this.data[i].niveau == type_level[val][1]) {
-                                count++;
-                            }
-                        }
-                    } else {
-                        for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val]) {
-                                count++;
-                            }
-                        }
-                    }
-
-                    return count;
-                }
             }
         }
     ]

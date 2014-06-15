@@ -20,14 +20,27 @@
     <script type="text/javascript" src="js/mustache.js"></script>
     <script type="text/javascript" src="https://rawgit.com/WoNaruto/images.wonaruto.com/master/js/6/core.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $.get('src/membres_distinctions.js', function (data) {
-                eval(data);
 
-                $.get('templates/membres_distinctions.mst', function (template) {
+        var ghUrl = 'https://github.com/WoNaruto/templates.wonaruto.com/blob/gh-pages/';
+        var jsonUrl = 'src/membres_distinctions.js';
+        var templateUrl = 'templates/membres_distinctions.mst';
+
+        $(document).ready(function () {
+
+            $("#template-url").attr('href', ghUrl+templateUrl);
+            $("#json-url").attr('href', ghUrl+jsonUrl);
+
+            $.get(jsonUrl, function (data) {
+
+                eval(data);
+                $('#json-source').html(data);
+
+                $.get(templateUrl, function (template) {
                     Mustache.parse(template);
                     var rendered = Mustache.render(template, source);
                     $('#render').html(rendered);
+
+                    $('#template-source').html(template);
                 });
 
             });
@@ -83,7 +96,13 @@
                 <div id="stitre">Mes distinctions</div>
 
                 <div id="render"></div>
-                <br /><br /><br />
+                <br /><br /><br /><br /><br /><br />
+                <a id="template-url">Voir sur GH</a><br />
+                <textarea style="width: 100%; height: 600px;" id="template-source"></textarea> 
+                <br /><br />
+                <a id="json-url">Voir sur GH</a><br />
+                <textarea style="width: 100%; height: 600px;" id="json-source"></textarea>    
+
             </div>
         </div>
 

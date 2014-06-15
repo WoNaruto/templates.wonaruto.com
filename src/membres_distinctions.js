@@ -119,7 +119,7 @@ var source = {
 
                     if (val == "e" || val == "d") {
                         for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val[0]] || this.data[i].niveau == type_level[val[1]]) {
+                            if (this.data[i].niveau == type_level[val][0] || this.data[i].niveau == type_level[val][1]) {
                                 count++;
                             }
                         }
@@ -184,7 +184,7 @@ var source = {
 
                     if (val == "e" || val == "d") {
                         for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val[0]] || this.data[i].niveau == type_level[val[1]]) {
+                            if (this.data[i].niveau == type_level[val][0] || this.data[i].niveau == type_level[val][1]) {
                                 count++;
                             }
                         }
@@ -242,7 +242,7 @@ var source = {
 
                     if (val == "e" || val == "d") {
                         for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau == type_level[val[0]] || this.data[i].niveau == type_level[val[1]]) {
+                            if (this.data[i].niveau == type_level[val][0] || this.data[i].niveau == type_level[val][1]) {
                                 count++;
                             }
                         }

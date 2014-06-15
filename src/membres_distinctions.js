@@ -194,7 +194,7 @@ var source = {
                 return this.data.length;
             },
             "value_progression": function () {
-                return this.count() + ' / 30';
+                return this.count() + ' / 5';
             },
             "value_bar_progression": function () {
                 return parseFloat((this.count() / 30) * 100).toFixed(2);
@@ -255,7 +255,7 @@ var source = {
                 return this.data.length;
             },
             "value_progression": function () {
-                return this.count() + ' / 30';
+                return this.count() + ' / 10';
             },
             "value_bar_progression": function () {
                 return parseFloat((this.count() / 30) * 100).toFixed(2);

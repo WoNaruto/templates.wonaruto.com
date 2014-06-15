@@ -112,24 +112,19 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                var total = this.count();
-                var result = {"e": 0, "d": 0, "c": 0, "b": 0, "a": 0, "s": 0};
+                return function (val, render) {
+                    var total = this.count();
+                    var type_level = {"e": 1, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var count = 0;
 
-                for(i=0;i<total;i++) {
-                    if(this.data[i].niveau == 1 || this.data[i].niveau == 2) result["e"]++;
-                    if(this.data[i].niveau == 3 || this.data[i].niveau == 4) result["d"]++;
-                    if(this.data[i].niveau == 5) result["c"]++;
-                    if(this.data[i].niveau == 6) result["b"]++;
-                    if(this.data[i].niveau == 7) result["a"]++;
-                    if(this.data[i].niveau == 8) result["s"]++;
+                    for (i = 0; i < total; i++) {
+                        if (this.data[i].niveau <= type_level[val]) {
+                            count++;
+                        }
+                    }
+
+                    return count;
                 }
-
-                return result["s"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["a"]+' <span class="type_level_a"></span>&nbsp;\
-                '+ result["b"]+' <span class="type_level_b"></span>&nbsp;\
-                '+ result["c"]+' <span class="type_level_c"></span>&nbsp;\
-                '+ result["d"]+' <span class="type_level_d"></span>&nbsp;\
-                '+ result["e"]+' <span class="type_level_e"></span>&nbsp;';
             }
         },
         {
@@ -174,24 +169,19 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                var total = this.count();
-                var result = {"e": 0, "d": 0, "c": 0, "b": 0, "a": 0, "s": 0};
+                return function (val, render) {
+                    var total = this.count();
+                    var type_level = {"e": 1, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var count = 0;
 
-                for(i=0;i<total;i++) {
-                    if(this.data[i].niveau == 1 || this.data[i].niveau == 2) result["e"]++;
-                    if(this.data[i].niveau == 3 || this.data[i].niveau == 4) result["d"]++;
-                    if(this.data[i].niveau == 5) result["c"]++;
-                    if(this.data[i].niveau == 6) result["b"]++;
-                    if(this.data[i].niveau == 7) result["a"]++;
-                    if(this.data[i].niveau == 8) result["s"]++;
+                    for (i = 0; i < total; i++) {
+                        if (this.data[i].niveau <= type_level[val]) {
+                            count++;
+                        }
+                    }
+
+                    return count;
                 }
-
-                return result["s"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["a"]+' <span class="type_level_a"></span>&nbsp;\
-                '+ result["b"]+' <span class="type_level_b"></span>&nbsp;\
-                '+ result["c"]+' <span class="type_level_c"></span>&nbsp;\
-                '+ result["d"]+' <span class="type_level_d"></span>&nbsp;\
-                '+ result["e"]+' <span class="type_level_e"></span>&nbsp;';
             }
         },
         {
@@ -229,24 +219,19 @@ var source = {
                 return this.description.replace(/'/g, '&#39;');
             },
             "render_details": function () {
-                var total = this.count();
-                var result = {"e": 0, "d": 0, "c": 0, "b": 0, "a": 0, "s": 0};
+                return function (val, render) {
+                    var total = this.count();
+                    var type_level = {"e": 1, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var count = 0;
 
-                for(i=0;i<total;i++) {
-                    if(this.data[i].niveau == 1 || this.data[i].niveau == 2) result["e"]++;
-                    if(this.data[i].niveau == 3 || this.data[i].niveau == 4) result["d"]++;
-                    if(this.data[i].niveau == 5) result["c"]++;
-                    if(this.data[i].niveau == 6) result["b"]++;
-                    if(this.data[i].niveau == 7) result["a"]++;
-                    if(this.data[i].niveau == 8) result["s"]++;
+                    for (i = 0; i < total; i++) {
+                        if (this.data[i].niveau <= type_level[val]) {
+                            count++;
+                        }
+                    }
+
+                    return count;
                 }
-
-                return result["s"]+' <span class="type_level_s"></span>&nbsp;\
-                '+ result["a"]+' <span class="type_level_a"></span>&nbsp;\
-                '+ result["b"]+' <span class="type_level_b"></span>&nbsp;\
-                '+ result["c"]+' <span class="type_level_c"></span>&nbsp;\
-                '+ result["d"]+' <span class="type_level_d"></span>&nbsp;\
-                '+ result["e"]+' <span class="type_level_e"></span>&nbsp;';
             }
         }
     ]

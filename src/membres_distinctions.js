@@ -114,13 +114,20 @@ var source = {
             "render_details": function () {
                 return function (val, render) {
                     var total = this.count();
-                    var type_level = {"e": 2, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var type_level = {"e": [1, 2], "d": [3, 4], "c": 5, "b": 6, "a": 7, "s": 8};
                     var count = 0;
-                    console.log(type_level[val]);
 
-                    for (i = 0; i < total; i++) {
-                        if (this.data[i].niveau <= type_level[val]) {
-                            count++;
+                    if (val == "e" || val == "d") {
+                        for (i = 0; i < total; i++) {
+                            if (this.data[i].niveau == type_level[val[0]] || this.data[i].niveau == type_level[val[1]]) {
+                                count++;
+                            }
+                        }
+                    } else {
+                        for (i = 0; i < total; i++) {
+                            if (this.data[i].niveau = type_level[val]) {
+                                count++;
+                            }
                         }
                     }
 
@@ -172,12 +179,20 @@ var source = {
             "render_details": function () {
                 return function (val, render) {
                     var total = this.count();
-                    var type_level = {"e": 2, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var type_level = {"e": [1, 2], "d": [3, 4], "c": 5, "b": 6, "a": 7, "s": 8};
                     var count = 0;
 
-                    for (i = 0; i < total; i++) {
-                        if (this.data[i].niveau <= type_level[val]) {
-                            count++;
+                    if (val == "e" || val == "d") {
+                        for (i = 0; i < total; i++) {
+                            if (this.data[i].niveau == type_level[val[0]] || this.data[i].niveau == type_level[val[1]]) {
+                                count++;
+                            }
+                        }
+                    } else {
+                        for (i = 0; i < total; i++) {
+                            if (this.data[i].niveau <= type_level[val]) {
+                                count++;
+                            }
                         }
                     }
 
@@ -222,12 +237,20 @@ var source = {
             "render_details": function () {
                 return function (val, render) {
                     var total = this.count();
-                    var type_level = {"e": 2, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var type_level = {"e": [1, 2], "d": [3, 4], "c": 5, "b": 6, "a": 7, "s": 8};
                     var count = 0;
 
-                    for (i = 0; i < total; i++) {
-                        if (this.data[i].niveau <= type_level[val]) {
-                            count++;
+                    if (val == "e" || val == "d") {
+                        for (i = 0; i < total; i++) {
+                            if (this.data[i].niveau == type_level[val[0]] || this.data[i].niveau == type_level[val[1]]) {
+                                count++;
+                            }
+                        }
+                    } else {
+                        for (i = 0; i < total; i++) {
+                            if (this.data[i].niveau <= type_level[val]) {
+                                count++;
+                            }
                         }
                     }
 

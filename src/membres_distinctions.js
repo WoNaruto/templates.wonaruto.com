@@ -125,7 +125,7 @@ var source = {
                         }
                     } else {
                         for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau = type_level[val]) {
+                            if (this.data[i].niveau == type_level[val]) {
                                 count++;
                             }
                         }
@@ -190,7 +190,7 @@ var source = {
                         }
                     } else {
                         for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau <= type_level[val]) {
+                            if (this.data[i].niveau == type_level[val]) {
                                 count++;
                             }
                         }
@@ -248,7 +248,7 @@ var source = {
                         }
                     } else {
                         for (i = 0; i < total; i++) {
-                            if (this.data[i].niveau <= type_level[val]) {
+                            if (this.data[i].niveau == type_level[val]) {
                                 count++;
                             }
                         }

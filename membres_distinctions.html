@@ -21,13 +21,14 @@
     <script type="text/javascript" src="https://rawgit.com/WoNaruto/images.wonaruto.com/master/js/6/core.js"></script>
     <script type="text/javascript">
 
+        var ghUrl = 'https://github.com/WoNaruto/templates.wonaruto.com/blob/gh-pages/';
         var jsonUrl = 'src/membres_distinctions.js';
         var templateUrl = 'templates/membres_distinctions.mst';
 
         $(document).ready(function () {
 
-            $("#template-url").attr('href', templateUrl);
-            $("#json-url").attr('href', jsonUrl);
+            $("#template-url").attr('href', ghUrl+templateUrl);
+            $("#json-url").attr('href', ghUrl+jsonUrl);
 
             $.get(jsonUrl, function (data) {
 

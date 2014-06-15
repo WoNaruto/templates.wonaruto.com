@@ -197,7 +197,7 @@ var source = {
                 return this.count() + ' / 5';
             },
             "value_bar_progression": function () {
-                return parseFloat((this.count() / 30) * 100).toFixed(2);
+                return parseFloat((this.count() / 5) * 100).toFixed(2);
             },
             "render_nom": function () {
                 return this.nom.replace(/'/g, '&#39;');
@@ -258,7 +258,7 @@ var source = {
                 return this.count() + ' / 10';
             },
             "value_bar_progression": function () {
-                return parseFloat((this.count() / 30) * 100).toFixed(2);
+                return parseFloat((this.count() / 10) * 100).toFixed(2);
             },
             "render_nom": function () {
                 return this.nom.replace(/'/g, '&#39;');

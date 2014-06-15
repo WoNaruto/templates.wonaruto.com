@@ -28,6 +28,7 @@
                     Mustache.parse(template);
                     var rendered = Mustache.render(template, source);
                     $('#render').html(rendered);
+                    $('#template-source').html(template);
                 });
 
             });
@@ -83,7 +84,9 @@
                 <div id="stitre">Mes distinctions</div>
 
                 <div id="render"></div>
-                <br /><br /><br />
+                <br /><br /><br /><br /><br /><br />
+                <textarea style="width: 100%; height: 600px;" id="template-source"></textarea>    
+
             </div>
         </div>
 

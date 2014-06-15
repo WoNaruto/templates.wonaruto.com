@@ -2,8 +2,8 @@
 {{#distinctions}}
     <tr class="bg-1">
         <td width="50%"><b>{{categorie}}</b></td>
-        <td align="right">{{&render_bar}}</td>
-        <td align="right">{{&render_progression}}</td>
+        <td align="right"><div class="stats-barre-2"><div class="bb-1" style="width:{{value_bar_progression}}%;"></div></div></td>
+        <td align="right"><span id="mclasse">{{value_progression}}</span></td>
     </tr>
     <tr>
         <td colspan="3" class="mclasse right">

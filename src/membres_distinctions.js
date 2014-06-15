@@ -99,11 +99,11 @@ var source = {
             "count": function () {
                 return this.data.length;
             },
-            "render_progression": function () {
-                return '<span id="mclasse">' + this.count() + ' / 30</span>';
+            "value_progression": function () {
+                return this.count() + ' / 30';
             },
-            "render_bar": function () {
-                return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+            "value_bar_progression": function () {
+                return parseFloat((this.count() / 30) * 100).toFixed(2);
             },
             "render_nom": function () {
                 return this.nom.replace(/'/g, '&#39;');
@@ -164,11 +164,11 @@ var source = {
             "count": function () {
                 return this.data.length;
             },
-            "render_progression": function () {
-                return '<span id="mclasse">' + this.count() + ' / 10</span>';
+            "value_progression": function () {
+                return this.count() + ' / 30';
             },
-            "render_bar": function () {
-                return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+            "value_bar_progression": function () {
+                return parseFloat((this.count() / 30) * 100).toFixed(2);
             },
             "render_nom": function () {
                 return this.nom.replace(/'/g, '&#39;');
@@ -222,11 +222,11 @@ var source = {
             "count": function () {
                 return this.data.length;
             },
-            "render_progression": function () {
-                return '<span id="mclasse">' + this.count() + ' / 10</span>';
+            "value_progression": function () {
+                return this.count() + ' / 30';
             },
-            "render_bar": function () {
-                return '<div class="stats-barre-2"><div class="bb-1" style="width:' + parseFloat((this.count() / 30) * 100).toFixed(2) + '%;"></div></div>';
+            "value_bar_progression": function () {
+                return parseFloat((this.count() / 30) * 100).toFixed(2);
             },
             "render_nom": function () {
                 return this.nom.replace(/'/g, '&#39;');

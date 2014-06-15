@@ -114,7 +114,7 @@ var source = {
             "render_details": function () {
                 return function (val, render) {
                     var total = this.count();
-                    var type_level = {"e": 1, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var type_level = {"e": 2, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
                     var count = 0;
 
                     for (i = 0; i < total; i++) {
@@ -171,7 +171,7 @@ var source = {
             "render_details": function () {
                 return function (val, render) {
                     var total = this.count();
-                    var type_level = {"e": 1, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var type_level = {"e": 2, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
                     var count = 0;
 
                     for (i = 0; i < total; i++) {
@@ -221,7 +221,7 @@ var source = {
             "render_details": function () {
                 return function (val, render) {
                     var total = this.count();
-                    var type_level = {"e": 1, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
+                    var type_level = {"e": 2, "d": 4, "c": 5, "b": 6, "a": 7, "s": 8};
                     var count = 0;
 
                     for (i = 0; i < total; i++) {

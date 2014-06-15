@@ -12,12 +12,12 @@
     </tr>
     <tr style="display:none" id="details-{{categorie-code}}">
         <td colspan="3" align="right">
-            <span id="mclasse">{{#render_details}}s{{/render_details}}</span> <span class="type_level_s"></span>
-            <span id="mclasse">{{#render_details}}a{{/render_details}}</span> <span class="type_level_a"></span>
-            <span id="mclasse">{{#render_details}}b{{/render_details}}</span> <span class="type_level_b"></span>
-            <span id="mclasse">{{#render_details}}c{{/render_details}}</span> <span class="type_level_c"></span>
-            <span id="mclasse">{{#render_details}}d{{/render_details}}</span> <span class="type_level_d"></span>
-            <span id="mclasse">{{#render_details}}e{{/render_details}}</span> <span class="type_level_e"></span>
+            <span id="mclasse">{{#render_details}}s{{/render_details}}x</span><span class="type_level_s"></span>
+            &nbsp;<span id="mclasse">{{#render_details}}a{{/render_details}}x</span><span class="type_level_a"></span>
+            &nbsp;<span id="mclasse">{{#render_details}}b{{/render_details}}x</span><span class="type_level_b"></span>
+            &nbsp;<span id="mclasse">{{#render_details}}c{{/render_details}}x</span><span class="type_level_c"></span>
+            &nbsp;<span id="mclasse">{{#render_details}}d{{/render_details}}x</span><span class="type_level_d"></span>
+            &nbsp;<span id="mclasse">{{#render_details}}e{{/render_details}}x</span><span class="type_level_e"></span>
         </td>
     </tr>
     <tr>
